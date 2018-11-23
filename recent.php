@@ -92,8 +92,7 @@
                             // video
                             $poster = $media->images->low_resolution->url;
                             $source = $media->videos->standard_resolution->url;
-                            $content .= "<video class=\"media video-js vjs-default-skin\" width=\"250\" height=\"250\" poster=\"{$poster}\"
-                                   data-setup='{\"controls\":true, \"preload\": \"auto\"}'>
+                            $content .= "<video controls>
                                      <source src=\"{$source}\" type=\"video/mp4\" />
                                    </video>";
                         } else {
@@ -115,7 +114,6 @@
                     }
                     ?>
                 </ul>
-               
                 <footer>
                     <p>
                         <center><b>Create By Marcelo Pereira </b></center>
